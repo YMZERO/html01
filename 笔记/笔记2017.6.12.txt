@@ -1,0 +1,190 @@
+=====流程控制语句=====
+做判断（if语句）
+语法:
+if(条件)
+{ 条件成立时执行代码}
+
+
+二选一 （if...else语句）
+语法:
+if(条件)
+{ 条件成立时执行的代码}
+else
+{条件不成立时执行的代码}
+
+
+多重判断（if..else嵌套语句）
+语法:
+if(条件1)
+{ 条件1成立时执行的代码}
+else  if(条件2)
+{ 条件2成立时执行的代码}
+...
+else  if(条件n)
+{ 条件n成立时执行的代码}
+else
+{ 条件1、2至n不成立时执行的代码}
+
+
+多种选择（Switch语句)
+语法:
+
+switch(表达式)
+{
+case值1:
+  执行代码块 1
+  break;
+case值2:
+  执行代码块 2
+  break;
+...
+case值n:
+  执行代码块 n
+  break;
+default:
+  与 case值1 、 case值2...case值n 不同时执行的代码
+}
+
+
+重复重复（for循环）
+for语句结构：
+for(初始化变量;循环条件;循环迭代)
+{     
+    循环语句 
+ }
+
+
+反反复复(while循环)
+while语句结构：
+while(判断条件)
+{
+    循环语句
+ }
+
+
+来来回回(Do...while循环)
+do...while语句结构：
+do
+{
+    循环语句
+ }
+while(判断条件)
+
+
+退出循环break
+格式如下：
+for(初始条件;判断条件;循环后条件值更新)
+{
+  if(特殊情况)
+  {break;}
+  循环代码
+}
+
+
+继续循环continue
+语句结构：
+for(初始条件;判断条件;循环后条件值更新)
+{
+  if(特殊情况)
+  { continue; }
+ 循环代码
+}
+
+
+=====函数=====
+定义函数
+function  函数名( )
+{
+     函数体;
+}
+
+
+函数调用
+第一种情况:在<script>标签内调用。
+add2();//调用函数，直接写函数名。
+
+第二种情况:在HTML文件中调用，如通过点击按钮后调用定义好的函数。
+<input type="button" value="click it" onclick="add2()">  //按钮,onclick点击事件，直接写函数名
+
+
+
+有参数的函数
+function 函数名(参数1,参数2)
+{
+     函数代码
+}
+
+
+返回值的函数
+function add2(x,y)
+{
+   sum = x + y;
+   return sum; //返回函数值,return后面的值叫做返回值。
+}
+
+
+=====事件=====
+事件         说明
+onclick      鼠标单击事件
+onmouseover  鼠标经过事件
+onmouseout   鼠标移开事件
+onchange     文本框内容改变事件
+onselect     文本框内容被选中事件
+onfocus      光标聚集
+onblur       光标离开
+onload       网页导入
+onunload     关闭网页
+
+鼠标单击事件(onclick）
+单击按钮时，触发 onclick 事件，并调用函数add2()
+
+鼠标经过事件（onmouseover）
+现实鼠标经过"确定"按钮时，触发onmouseover事件，调用函数info()
+
+鼠标移开事件（onmouseout）
+当把鼠标移动到"登录"按钮上，然后再移开时，触发onmouseout事件，调用函数message()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
