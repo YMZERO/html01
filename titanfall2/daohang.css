@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑";
+}
+html{
+	background:url("./img/bg.jpg" ) no-repeat;
+	background-attachment:fixed;  
+	background-size: 100%;
+	height: 2000px;
+}
+#header{
+	width:100%;
+	height: 45px;
+	background-color:#222;
+
+}
+#dh{
+	width:100%;
+	height: 175px;
+	background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+	position: fixed 500px 500px;  
+}
+.u1 li,.u2 li{
+	list-style: none;
+
+}
+.u1 li a{
+	float: right;
+	line-height: 45px;
+	font-size:25px;
+	margin-right:20px;
+	text-decoration: none;
+	color: #666666;
+
+}
+.u2 li{
+	float: left;
+	line-height:110px;
+	font-size:28px;
+	margin-left:30px;
+}
+
+.u2 li a:hover{
+	color:#CCC;
+	animation:myfirst 5s infinite;
+	-moz-animation:myfirst 5s infinite; 
+	-webkit-animation:myfirst 5s infinite; 
+	-o-animation:myfirst 5s infinite; 
+}
+
+@keyframes myfirst
+{
+0%   {color: #FFF;}
+25%  {color: #666;}
+50%  {color: #666;}
+100% {color: #FFF;}
+}
+.u1 li a:hover{
+	color:black;
+}
+.u2 img{
+	width: 350px;
+	float: left;
+	display: block;
+	margin-top:25px;
+	margin-left:25px;
+}
+.u2 li a{
+	text-decoration: none;
+	color: #666666;
+	animation:myfirs 5s infinite;
+	-moz-animation:myfirs 5s infinite; 
+	-webkit-animation:myfirs 5s infinite; 
+	-o-animation:myfirs 5s infinite; 
+}
+@keyframes myfirs
+{
+100% {color: #FFF;}
+50%  {color: #666;}
+25%  {color: #666;}
+0%  {color: #FFF;}
+}
+#dibu{
+	width:100%;
+	height: 175px;
+	margin-top: 685px;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+}
+body{
+	background:url("./img/tu1.jpg" ) no-repeat;
+	width: 100%;
+
