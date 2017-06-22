@@ -1,0 +1,75 @@
+开始使用sublime text 3时输入以下简写，按Tab键（html:5）
+编写中文网页，记得把头部语言改为 <html lang="zh-cn"> 而不是<html lang="en">
+
+transform
+功能：向元素应用2D或3D转换
+语法：transform:none|transform-functions
+参数：  translate3d(x,y,z)定义 3D 转化
+	rotate3d(x,y,z,angle)定义 3D 旋转
+	scale3d(x,y,z,flex)定义 3D 缩放
+
+a:link 链接未点击上去时候
+a:visited 链接已经点击过的
+a:hover 鼠标放在链接上未点击
+a:active 是介于hover visited 之间的一个状态，可以说是链接被按下时候的状态
+
+
+
+
+毛玻璃效果
+.blur {	
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+    
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+
+
+
+CSS中filter属性
+  filter:filtername(fparameter1, fparameter2...)
+滤镜说明：
+
+Alpha：设置透明层次 
+ 
+blur：创建高速度移动效果，即模糊效果
+
+Chroma：制作专用颜色透明
+
+DropShadow：创建对象的固定影子
+
+FlipH：创建水平镜像图片
+
+FlipV：创建垂直镜像图片
+
+glow：加光辉在附近对象的边外
+
+gray：把图片灰度化
+
+invert：反色
+
+light：创建光源在对象上
+
+mask：创建透明掩膜在对象上
+
+shadow：创建偏移固定影子
+
+wave：波纹效果
+
+Xray：使对象变得像被x光照射一样
+
+1、滤镜：Alpha   "filter:Alpha(Opacity=opacity)         Opacity：起始值，取值为0～100, 0为透明，100为原图。
+
+2、滤镜：blur   ilter:Blur(Add = add, Direction = direction, Strength = strength)     Add：一般为1，或0。Direction：角度，0～315度，步长为45度。Strength：效果增长的数值，一般5即可。
+
+3、滤镜：Chroma  filter:Chroma(Color = color)
+
+4、滤镜：DropShadow   filter:DropShadow(Color=color, OffX=offX, OffY=offY, Positive=positive)     Offx：X轴偏离值。Offy：Y轴偏离值。
+
+5、滤镜：shadow     filter:Shadow(Color=color, Direction=direction)   Direction：角度，0－315度，步长为45度。
+
+6.颜色变化   filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B5CCFA', EndColorStr='#B5CCFA');

@@ -1,0 +1,88 @@
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  /*css3*/
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;  /*css3*/
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;  /*css3*/
+
+  height: 100vh;
+  position: relative;
+}
+
+.toggle{
+	width: 35px;
+	height: 20px;
+	padding: 0 2px;
+	background-color: white;
+	border: 1px solid black;
+	position: absolute;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;  /*css3*/
+
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;  /*css3*/
+
+	box-sizing: border-box;
+	-webkit-transition: 300ms;
+	transition: 300ms;  /*css3*/
+}
+.toggle::after{
+	content: '';
+	position:absolute;
+	height: 10px;
+	width: 10px;
+	background-color: lightgrey;
+
+	-webkit-transition:300ms;
+	transition: 300ms;  /*css3*/
+}
+
+.toggle{
+	width: 35px;
+	height: 20px;
+	padding: 0 2px;
+	background-color: white;
+	border: 1px solid black;
+	position: absolute;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;  /*css3*/
+
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;  /*css3*/
+
+	box-sizing: border-box;
+	-webkit-transition: 300ms;
+	transition: 300ms;  /*css3*/
+}
+.toggle::after{
+	content: '';
+	position:absolute;
+	height: 10px;
+	width: 10px;
+	background-color: lightgrey;
+	
+	-webkit-transition:300ms;
+	transition: 300ms;  /*css3*/
+}
+.is-active {
+  background-color: black;
+}
+
+.is-active::after {
+	-webkit-transform: translate3d(19px, 0, 0) rotate(90deg);
+	transform: translate3d(19px, 0, 0) rotate(90deg);  /*css3*/
+}
+

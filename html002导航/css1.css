@@ -15,25 +15,6 @@ body{
 text-indent:2em;
 }
 
-.l3{
-	list-style: none;
-	text-align: center;
-	color:#333;
-	margin-left:800px;
-
-}
-
-.l3 a{
-	text-decoration: none;
-	color: black;
-	transition: background 1s;
-}
-
-.l3 a:hover{
-	background: #CCC;
-	color:#FFF;
-}
-
 #aa{
 	width: 800px;
 	height: 100%;
